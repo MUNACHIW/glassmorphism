@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Hovercard</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <h2>01</h2>
+                <h3>Card One</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Debitis laboriosam, veniam ipsum, qui et hic laudantium assumenda 
+                    sint neque, aliquid
+                </p>
+                <a href="#">Read More</a>
+            </div>
+            
+        </div>
+
+        <div class="container" id="container">
+            <div class="card" id="card">
+                <div class="content">
+                    <h2>02</h2>
+                    <h3>Card Two</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Debitis laboriosam, veniam ipsum, qui et hic laudantium assumenda 
+                        sint neque, aliquid
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+                
+            </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <h2>03</h2>
+                <h3>Card Three</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Debitis laboriosam, veniam ipsum, qui et hic laudantium assumenda 
+                    sint neque, aliquid
+                </p>
+                <a href="#">Read More</a>
+            </div>
+            
+        </div>
+</div>
+</body>
+<script>
+    //movement 
+  var card = document.getElementById('card');
+  var container = document.getElementById('container');
+  container.addEventListener('mousemove', (e)=>{
+     let xAxis = (window .innerWidth /2 - e.pageX) / 25;
+     let yAxis = (window.innerwidth / 2 - e.pageY) / 25;
+ card.style.transform='rotateY(${xAxis}deg), rotateX(${yAxis}deg)';
+  })
+
+ </script>
+</html>
