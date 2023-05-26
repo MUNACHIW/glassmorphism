@@ -53,16 +53,5 @@
             
         </div>
 </div>
-</body>
-<script>
-    //movement 
-  var card = document.getElementById('card');
-  var container = document.getElementById('container');
-  container.addEventListener('mousemove', (e)=>{
-     let xAxis = (window .innerWidth /2 - e.pageX) / 25;
-     let yAxis = (window.innerwidth / 2 - e.pageY) / 25;
- card.style.transform='rotateY(${xAxis}deg), rotateX(${yAxis}deg)';
-  })
-
- </script>
+  </body>
 </html>
