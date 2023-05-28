@@ -37,10 +37,15 @@ body::after
     position: relative;
     display:flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     max-width: 1200px;
     flex-wrap: wrap;
     z-index: 1;
+}
+@media screen and (min-width:770px) and (max-width:1115px) {
+    .container{
+        flex-direction:column;
+    }
 }
 .container .card{
     position: relative;
